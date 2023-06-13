@@ -94,20 +94,21 @@ section.categories #op {
     height: 54px;
 }
 section.categories #op-text {
-    position: absolute;
     width: 400px;
     height: 59px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 22px;
     line-height: 30px;
-    padding-left: 21px;
+    padding-left: 15px;
 }
 section.categories #op-div {
-    padding: 64px 0;
+    padding: 55px 0;
 }
-
+section.categories #card-card {
+    padding-bottom: 30px;
+}
 /*-------------------------------------
 Advantages Section
 ---------------------------------------*/
@@ -120,6 +121,8 @@ section.advantages #advantage-text {
     font-size: 40px;
     line-height: 55px;
     color: #000000;
+    padding-top: 60px;
+    padding-bottom: 30px;
 }
 section.advantages #title-advantage {
     padding-top: 10px;
