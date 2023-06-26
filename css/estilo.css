@@ -14,6 +14,21 @@ Color Setup
     --white: #FFFFFF;
     --body: #F6EFE8;
     --navbar: #110C2C;
+
+    --header-1: 64px;
+    --header-2: 48px;
+    --header-3: 42px;
+    --header-4: 32px;
+
+    --text-medium: 18px;
+    --text-regular: 16px;
+    --text-light: 13px;
+
+    --font-weight-bold: 700;
+    --font-weight-semi-bold: 600;
+    --font-weight-medium: 500;
+    --font-weight-regular: 400;
+    --font-weight-light: 300;
 }
 
 body {
@@ -29,6 +44,10 @@ a {
 
 a:hover {
     color: var(--gray-1);
+}
+
+.navbar {
+    padding: 48px 0;
 }
 
 nav .container-fluid {
@@ -75,32 +94,42 @@ nav .item {
 /*-------------------------------------
 Hero Section
 ---------------------------------------*/
-section.hero { 
-    padding: 60px 0;
+section.hero {
+    margin: 4rem 0;
 }
 
-section.hero #text-div {
-    padding: 50px 0;
+section.hero img {
+    margin: 2rem 0;
 }
 
-section.hero #text {
-    font-size: 40px;
-    font-family: "Montserrat", sans-serif;
-    font-weight:bolder;
-    line-height: 50px;
+.text-label,
+.text-hero-regular {
+    margin: 10px 0;
+}
+
+.text-label {
     color: #000000;
+    font-size: var(--header-1);
+    font-weight: var(--font-weight-bold);
+    line-height: 74px;
 }
-section.hero #text-1 {
-    font-size: 20px;
-    font-weight: 400;
+.text-hero-regular {
+    color: #222222;
+    font-size: var(--text-light);
+    font-weight: var(--font-weight-regular);
     line-height: 25px;
+}
 
+.btn-primary {
+    padding: 15px 30px;
+    background-color: var(--primary);
+    border: none;
+    font-size: var(--text-medium);
 }
-section.hero #img-size {
-    width: 550px;
-    height: 350px;
-    position: absolute;
+.btn-primary:focus {
+    background-color: #545454;
 }
+
 
 /*-------------------------------------
 Categories Section
@@ -172,4 +201,88 @@ section.advantages #op-advantage {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+}
+
+
+/* Desktop Version Only */
+@media (min-width: 1399.98px) {
+    .container {
+        width: 84%;
+    }
+}
+
+/* Mobile Version Only */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    section.hero {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+
+    .text-label,
+    .text-hero-regular {
+        text-align: center;
+    }
+
+    .text-label {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 64px;
+    }
+
+    .section-hero img {
+        margin: 2rem 0;
+        display: none;
+    }
+}
+
+/* Tablet Small Version Only */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    section.hero {
+        margin: 1rem 0;
+    }
+    .text-label {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 50px;
+    }
+
+    .section-hero img {
+        margin: 2rem 0;
+    }
+
+}
+
+/*Tablet Medium & Large Version */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 28px 0;
+    }
+
+    section.hero {
+        margin: 1rem 0;
+
+    }
+    .text-label {
+        font-weight: var(--font-weight-bold);
+        font-size: var(--header-3);
+        line-height: 50px;
+    }
+
+    .section-hero img {
+        margin: 2rem 0;
+    }
+
 }
