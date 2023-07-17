@@ -12,6 +12,7 @@ Color Setup
     --gray-1: #545454;
     --gray-2: #E2DFEE;
     --white: #FFFFFF;
+    --white2: #F8F4F5;
     --body: #F6EFE8;
     --body-2: #040404;
     --navbar: #110C2C;
@@ -59,6 +60,7 @@ Button Setup
     font-size: var(--text-medium);
     color: var(--primary-dark);
     font-weight: var(--font-weight-bold);
+    margin-top: 20px;
 }
 .btn-primary:hover {
     background-color: var(--cta-1-dark);
@@ -112,7 +114,7 @@ nav .item {
 Hero Section
 ---------------------------------------*/
 section.hero {
-    margin: 3rem 0;
+    margin-top: 3rem 0;
 }
 
 .text-label,
@@ -133,6 +135,50 @@ section.hero {
     font-weight: var(--font-weight-regular);
     line-height: 25px;
 }
+
+/*-------------------------------------
+Partners Section
+---------------------------------------*/
+.partner {
+    background: #222222;
+    color: #A9ABAC;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: 20px;
+}
+.partner .img {
+    padding: 20px 0;
+}
+
+/*-------------------------------------
+What We Do Section
+---------------------------------------*/
+.wwd {
+    margin: 6rem 0;
+}
+
+.wwd .tag-title{
+    background-color: #8B8F68;
+    color: #000000;
+    font-weight: var(--font-weight-bold);
+    padding: 7px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.wwd .title-label{
+    padding: 10px 0;
+    font-size: 40px;
+    color: var(--white);
+    font-weight: var(--font-weight-semi-bold)
+}
+
+.wwd .info-label{
+    padding: 7px 0;
+    color: var(--white2);
+    font-size: 20px;
+    opacity: 70%;
+}
+
 
 /*-------------------------------------
 Categories Section
@@ -266,6 +312,11 @@ section.advantages #op-advantage {
         margin: 2rem 0;
     }
 
+    .btn-primary {
+        margin-top: 5px;
+        padding: 10px 20px;
+    }
+
 }
 
 /*Tablet Medium & Large Version */
@@ -286,6 +337,11 @@ section.advantages #op-advantage {
 
     .section-hero img {
         margin: 2rem 0;
+    }
+
+    .btn-primary {
+        margin-top: 5px;
+        padding: 10px 20px;
     }
 
 }
