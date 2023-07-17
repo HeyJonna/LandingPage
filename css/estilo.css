@@ -291,6 +291,34 @@ section.advantages #op-advantage {
         margin: 2rem 0;
         display: none;
     }
+    
+    .wwd img {
+        margin-bottom: 30px;
+    }
+
+    .wwd .tag-title{
+        background-color: #8B8F68;
+        color: #000000;
+        font-weight: var(--font-weight-bold);
+        padding: 7px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    
+    .wwd .title-label{
+        padding: 5px 0;
+        font-size: 20px;
+        color: var(--white);
+        font-weight: var(--font-weight-semi-bold);
+        text-align: center;
+    }
+    
+    .wwd .info-label{
+        color: var(--white2);
+        font-size: 17px;
+        opacity: 70%;
+        text-align: center;
+    }
 }
 
 /* Tablet Small Version Only */
