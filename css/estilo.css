@@ -254,14 +254,14 @@ section.advantages #op-advantage {
 
 
 /* Desktop Version Only */
-@media (min-width: 1399.98px) {
+@media (min-width: 1199.98px) {
     .container {
         width: 84%;
     }
 }
 
 /* Mobile Version Only */
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     .navbar {
         padding: 28px 0;
     }
@@ -291,6 +291,10 @@ section.advantages #op-advantage {
         margin: 2rem 0;
         display: none;
     }
+
+    .wwd {
+        padding: 0 20px;
+    }
     
     .wwd img {
         margin-bottom: 30px;
@@ -302,7 +306,7 @@ section.advantages #op-advantage {
         font-weight: var(--font-weight-bold);
         padding: 7px 10px;
         border-radius: 10px;
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .wwd .title-label{
@@ -322,7 +326,7 @@ section.advantages #op-advantage {
 }
 
 /* Tablet Small Version Only */
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .navbar {
         padding: 28px 0;
     }
@@ -343,12 +347,34 @@ section.advantages #op-advantage {
     .btn-primary {
         margin-top: 5px;
         padding: 10px 20px;
+    }
+
+    .wwd .tag-title{
+        background-color: #8B8F68;
+        color: #000000;
+        font-weight: var(--font-weight-bold);
+        padding: 7px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    
+    .wwd .title-label{
+        padding: 5px 0;
+        font-size: 25px;
+        color: var(--white);
+        font-weight: var(--font-weight-semi-bold);
+    }
+    
+    .wwd .info-label{
+        color: var(--white2);
+        font-size: 16px;
+        opacity: 70%;
     }
 
 }
 
 /*Tablet Medium & Large Version */
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .navbar {
         padding: 28px 0;
     }
@@ -370,6 +396,27 @@ section.advantages #op-advantage {
     .btn-primary {
         margin-top: 5px;
         padding: 10px 20px;
+    }
+
+    .wwd .tag-title{
+        background-color: #8B8F68;
+        color: #000000;
+        font-weight: var(--font-weight-bold);
+        padding: 7px 9px;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    
+    .wwd .title-label{
+        font-size: 25px;
+        color: var(--white);
+        font-weight: var(--font-weight-semi-bold);
+    }
+    
+    .wwd .info-label{
+        color: var(--white2);
+        font-size: 15px;
+        opacity: 70%;
     }
 
 }
