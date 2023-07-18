@@ -119,7 +119,7 @@ section.hero {
 
 .text-label,
 .text-hero-regular {
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .text-label {
@@ -166,17 +166,53 @@ What We Do Section
 }
 
 .wwd .title-label{
-    padding: 10px 0;
+    padding: 7px 0;
     font-size: 40px;
     color: var(--white);
     font-weight: var(--font-weight-semi-bold)
 }
 
 .wwd .info-label{
-    padding: 7px 0;
+    padding: 5px 0;
     color: var(--white2);
     font-size: 20px;
     opacity: 70%;
+}
+
+/*-------------------------------------
+Benefits Section
+---------------------------------------*/
+.benefits i {
+    font-size: 30px;
+    color: var(--primary);
+}
+.benefits .title_benefits {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: var(--font-weight-semi-bold);
+}
+.benefits .title_df {
+    color: #68B8FC;
+}
+.benefits .benefits_titles {
+    font-weight: var(--font-weight-semi-bold);
+    margin: 7px 0;
+}
+.benefits .benefits_description {
+    opacity: 70%;
+}
+
+.benefits .benefit_box {
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+.benefits .inside_icon {
+    background-color: var(--white);
+    padding: 5px 5px;
+    margin: 10px 0;
+    border-radius: 15px;
 }
 
 
@@ -253,13 +289,6 @@ section.advantages #op-advantage {
 }
 
 
-/* Desktop Version Only */
-@media (min-width: 1199.98px) {
-    .container {
-        width: 84%;
-    }
-}
-
 /* Mobile Version Only */
 @media (max-width: 575.98px) {
     .navbar {
@@ -272,7 +301,6 @@ section.advantages #op-advantage {
     }
 
     .btn {
-        display: block;
         margin: 1rem 0;
     }
 
@@ -323,6 +351,14 @@ section.advantages #op-advantage {
         opacity: 70%;
         text-align: center;
     }
+
+    .benefits{
+        margin: 3rem 0;
+    }
+    .benefits .title_benefits,
+    .title_df {
+        font-size: 10px;
+    }
 }
 
 /* Tablet Small Version Only */
@@ -336,7 +372,7 @@ section.advantages #op-advantage {
     }
     .text-label {
         font-weight: var(--font-weight-bold);
-        font-size: var(--header-3);
+        font-size: var(--header-4);
         line-height: 50px;
     }
 
@@ -370,6 +406,10 @@ section.advantages #op-advantage {
         font-size: 16px;
         opacity: 70%;
     }
+    .benefits .title_benefits,
+    .title_df {
+        font-size: 16px;
+    }
 
 }
 
@@ -380,13 +420,13 @@ section.advantages #op-advantage {
     }
 
     section.hero {
-        margin: 1rem 0;
+        margin-top: 1rem 0;
 
     }
     .text-label {
         font-weight: var(--font-weight-bold);
         font-size: var(--header-3);
-        line-height: 50px;
+        line-height: 45px;
     }
 
     .section-hero img {
@@ -395,28 +435,59 @@ section.advantages #op-advantage {
 
     .btn-primary {
         margin-top: 5px;
-        padding: 10px 20px;
+        padding: 7px 15px;
     }
 
     .wwd .tag-title{
         background-color: #8B8F68;
         color: #000000;
         font-weight: var(--font-weight-bold);
-        padding: 7px 9px;
+        padding: 3px 5px;
         border-radius: 10px;
         font-size: 15px;
     }
     
     .wwd .title-label{
-        font-size: 25px;
+        font-size: 20px;
         color: var(--white);
         font-weight: var(--font-weight-semi-bold);
     }
     
     .wwd .info-label{
         color: var(--white2);
-        font-size: 15px;
+        font-size: 14px;
         opacity: 70%;
     }
 
+    .benefits {
+        margin-top: rem;
+    }
+    .benefits i {
+        font-size: 20px;
+    }
+
+    .benefits .inside_icon {
+        padding: 2px 5px;
+    }
+    .benefits .title_benefits {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .benefits .title_df {
+        font-size: 20px;
+    }
+    .benefits .benefits_titles {
+        font-size: 15px;
+    }
+    .benefits .benefits_description {
+        font-size: 12px;
+    }
+
+}
+
+/* Desktop Version Only */
+@media (max-width: 1199.98px) {
+    .container {
+        width: 84%;
+    }
 }
